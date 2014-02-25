@@ -20,7 +20,7 @@ $ git config --global user.name "<ユーザ名>"
 $ git config --global user.email "<メールアドレス>"
 ```
 
-#### ※（必要な場合）proxy設定（今回の実習では、設定不要です。）
+#### ※[今回の実習では、設定不要です] paroxy設定（必要な場合）
 ```
 $ git config --global http.proxy http://proxyname:8080
 $ git config --global https.proxy http://proxyname:8080
@@ -54,16 +54,11 @@ $ git init
 #### 4. 実習作業を行う
 
 #### 5. 変更内容を、Gitの`ローカルリポジトリ`へコミットする
-* (1).コミットの準備のため、変更したファイルについて以下の操作を行う
-	* ファイル名を指定してadd
-```
-$ git add <ファイル名>
-```
-	* まとめてadd
+* (1).コミット準備として、以下の操作を行う
 ```
 $ git add *
 ```
-    * ※これらの操作により、Gitの`インデックス`領域に、コミットすべきファイルが追加されます。
+※この操作により、Gitの`インデックス`領域に、コミットすべきファイルが追加されます。
 * (2).以下の操作により、`ローカルリポジトリ`へコミットを行う
     * インデックスの内容を、commitする
 ```
@@ -71,7 +66,7 @@ $ git commit -m "コミットメッセージ"
 ```
 #### 6. コミットした内容を、GitHubへpushする
 * [一度だけ実施]GitHubに、管理用リポジトリを作成しておく
-* [一度だけ実施]GitHubのリポジトリに、名前をつけておく（originという名前をつける）。
+* [一度だけ実施]GitHubのリポジトリに、ローカルでの別名をつけておく（originという別名をつけておく）。
 ```
 $ git remote add origin https://github.com/<GitHubのアカウント名>/<作成した管理用リポジトリ名>.git
 ```
@@ -82,15 +77,15 @@ $ git push origin master
 以下、その時のログ
 ```
 git: 'credential-cache' is not a git command. See 'git --help'.
-Username for 'https://github.com': zacky-san
-Password for 'https://zacky-san@github.com':
+Username for 'https://github.com': <GitHubのアカウント名>
+Password for 'https://<GitHubのアカウント名>@github.com':<パスワード>
 git: 'credential-cache' is not a git command. See 'git --help'.
 Counting objects: 11, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (4/4), done.
 Writing objects: 100% (8/8), 636 bytes | 0 bytes/s, done.
 Total 8 (delta 0), reused 0 (delta 0)
-To https://github.com/zacky-san/test02
+To https://github.com/<GitHubのアカウント名>/<作成した管理用リポジトリ名>
    1e41106..75b07ff  master -> master
 ```
 * [push時のパスワード入力を省略したい場合] 以下のコマンドを実行すると、指定した時間（秒）の間、一度入力したアカウント名/パスワードがメモリ中に保存されるので便利。
