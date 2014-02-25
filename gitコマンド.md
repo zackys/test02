@@ -94,3 +94,9 @@ $ git config --global credential.helper cache --timeout=3600
 ```
 
 以上、4～5を繰り返して開発を進め、タイミングをみて6を実施してださい。
+
+ご参考
+------
+
+* [git - 簡単ガイド](http://rogerdudler.github.io/git-guide/index.ja.html) - http://rogerdudler.github.io/git-guide/index.ja.html
+* [Gitを使いこなすための20のコマンド](http://sourceforge.jp/magazine/09/03/16/0831212) - http://sourceforge.jp/magazine/09/03/16/0831212
