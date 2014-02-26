@@ -37,6 +37,8 @@ $ git config --global https.proxy http://proxyname:8080
 	proxy = http://proxyname:8080
 ```
 
+---
+
 Gitの操作
 ------------
 
@@ -51,7 +53,7 @@ cd XXX
 ```
 $ git init
 ```
-#### 4. 実習作業を行う
+#### 4. 実習作業を行う（ファイルの追加・更新etc）
 
 #### 5. 変更内容を、Gitの`ローカルリポジトリ`へコミットする
 * (1).コミット準備として、以下の操作を行う
