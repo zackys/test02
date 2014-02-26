@@ -20,7 +20,7 @@ $ git config --global user.name "<ユーザ名>"
 $ git config --global user.email "<メールアドレス>"
 ```
 
-#### ※[今回の実習では、設定不要です] paroxy設定（必要な場合）
+#### ※[今回の実習では、設定不要です] proxy設定（必要な場合）
 ```
 $ git config --global http.proxy http://proxyname:8080
 $ git config --global https.proxy http://proxyname:8080
